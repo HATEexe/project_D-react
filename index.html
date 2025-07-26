@@ -3,9 +3,483 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainDeadsers Hub</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <div class="container">
+        <div class="header__nav">
+          <ul class="header__list">
+            <a href="#" class="headear__link-active">
+              <li class="headerNavItem">Главная</li>
+            </a>
+            <a href="workExamples.html" class="headear__link">
+              <li class="headerNavItem">Работы</li>
+            </a>
+            <span class="header__logo">
+              <span class="colored">Brain</span>
+              <span>Deadsers</span>
+            </span>
+            <a href="prices.html" class="headear__link">
+              <li class="headerNavItem">Услуги</li>
+            </a>
+            <a href="vacancies.html" class="headear__link">
+              <li class="headerNavItem">Вакансии</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main__head">
+          <span>Привет!</span>
+        </div>
+        <div class="main__head_text">
+          <span>
+            <span>Мы - <span class="colored">Brain</span>Deadsers,</span>
+          </span>
+          <span> а ты хочешь крутой сайт</span>
+        </div>
+        <div class="order__section">
+          <div class="order__bg">
+            <img class="order__img" src="./public/img/BrainObject.png" />
+            <img class="order__ellipse" src="./public/img/Ellipse 1.png" />
+          </div>
+          <div class="order__grade">
+            <ul class="order__list">
+              <li><img src="./public/img/Star.png" /></li>
+              <li><img src="./public/img/Star.png" /></li>
+              <li><img src="./public/img/Star.png" /></li>
+              <li><img src="./public/img/Star.png" /></li>
+              <li><img src="./public/img/Star.png" /></li>
+            </ul>
+            <div class="order__exp">
+              <span class="order__year">5 ЛЕТ </span>
+              <span>на рынке</span>
+            </div>
+          </div>
+        </div>
+        <button class="order__btn" onclick="showPopup()">ЗАКАЗАТЬ САЙТ</button>
+        <div id="popup" style="display: none">
+          <div class="popup__header">
+            <button class="popup__close_btn" onclick="hidePopup()">×</button>
+            <div class="popup__header_inner">
+              <span>ЗАКАЗАТЬ ЗВОНОК</span>
+              <span class="popup__description">
+                Закажите звонок и мы перезвоним через 15 минут
+              </span>
+            </div>
+            <hr />
+          </div>
+          <div class="popup__form">
+            <form action="" method="get">
+              <input
+                type="text"
+                class="name-field"
+                placeholder="Ваше имя"
+                required
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Ваш телефон"
+                required
+              />
+              <input type="submit" value="Заказать сайт" class="popup__btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="service__section">
+        <div class="container">
+          <div class="service__list_head">
+            <span>Над чем мы <span class="colored">работаем</span> </span>
+          </div>
+          <div class="service__list">
+            <div class="service__card-1">
+              <div class="service__card_head">
+                <span>UI/UX дизайн</span>
+              </div>
+              <hr />
+              <div class="service__card_photo">
+                <img src="./public/img/cardImage.png" class="card_img-1" />
+                <img src="./public/img/cardImage.png" class="card_img-2" />
+                <img src="./public/img/cardImage.png" class="card_img-3" />
+              </div>
+            </div>
+            <div class="service__card-2">
+              <div class="service__card_head">
+                <span>Frontend</span>
+              </div>
+              <hr />
+              <div class="service__card_photo">
+                <img src="./public/img/cardImage.png" class="card_img-1" />
+                <img src="./public/img/cardImage.png" class="card_img-2" />
+                <img src="./public/img/cardImage.png" class="card_img-3" />
+              </div>
+            </div>
+            <div class="service__card-3">
+              <div class="service__card_head">
+                <span>Backend</span>
+              </div>
+              <hr />
+              <div class="service__card_photo">
+                <img src="./public/img/cardImage.png" class="card_img-1" />
+                <img src="./public/img/cardImage.png" class="card_img-2" />
+                <img src="./public/img/cardImage.png" class="card_img-3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info__section">
+        <div class="container">
+          <div class="info__head">
+            <span>Наш <span class="colored">опыт работы</span></span>
+          </div>
+          <div class="info__roadmap">
+            <div class="info__left">
+              <div class="roadmap__item">
+                <div class="roadmap__item_head">
+                  <h2>Локальные заказы</h2>
+                </div>
+                <div class="roadmap__item_content">
+                  <span>Март 2019 - Январь 2021</span>
+                </div>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__item_head">
+                  <h2>Сетевые клиенты</h2>
+                </div>
+                <div class="roadmap__item_content">
+                  <span>Февраль 2021 - Сентябрь 2023</span>
+                </div>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__item_head">
+                  <h2>Крупные бизнес заказы</h2>
+                </div>
+                <div class="roadmap__item_content">
+                  <span>Октябрь 2021 - Сегодня</span>
+                </div>
+              </div>
+            </div>
+            <div class="info__center">
+              <img src="./public/img/Roadmap.png" />
+            </div>
+            <div class="info__right">
+              <div class="roadmap__item">
+                <div class="roadmap__item_content">
+                  <span>
+                    Локальные клиенты из регионов России: салоны красоты,
+                    барбершопы, кафе, закусочные и розничная торговля
+                  </span>
+                </div>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__item_content">
+                  <span>
+                    Сетевые клиенты сферы услуг и торговли: минимаркеты “У
+                    дома”, сеть ресторанов быстрого питания “НажрисьКА!” и др.
+                  </span>
+                </div>
+              </div>
+              <div class="roadmap__item">
+                <div class="roadmap__item_content">
+                  <span>
+                    Крупные клиенты из топ 100 компаний СНГ: Табачная компания
+                    “Pokuri”, сеть магазинов “Слыш, купи!”, салоны связи
+                    “Недозвон” и др.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reason__section">
+          <div class="container">
+            <div class="reason__grid">
+              <div class="reason__img">
+                <img src="./public/img/WhyWeImg.png" class="reason__label" />
+                <div class="reason__label_bg"></div>
+              </div>
+              <div class="reason__text">
+                <div class="reason__head">
+                  <span> Почему <span class="colored">именно мы?</span> </span>
+                </div>
+                <div class="reason__text_content">
+                  <span>
+                    Сразу к делу. У нас вы можете заказать ПОЛНЫЙ спектр услуг
+                    для запуска вашего сайта. Вот прям полный, от разработки
+                    дизайна до регистрации у хоста.
+                  </span>
+                  <span>
+                    Что ещё важно - мы не бросим вас после получения оплаты. На
+                    каждый сайт мы даём гарантию поддержи в 12 месяцев
+                    совершенно бесплатно! Разберёмся с проблемами хостинга,
+                    ошибками и сбоями, а также дадим скидку на последующие
+                    заказы по редизайну или переработке сайта.
+                  </span>
+                </div>
+                <div class="reason__statistic">
+                  <div class="reason__projects">
+                    <h2>450+</h2>
+                    <span>Выполненных проектов</span>
+                  </div>
+                  <div class="reason__year">
+                    <h2>5 ЛЕТ</h2>
+                    <span>на рынке</span>
+                  </div>
+                </div>
+                <button class="order__btn-2" onclick="showPopup()">
+                  ЗАКАЗАТЬ САЙТ
+                </button>
+                <div id="popup" style="display: none">
+                  <div class="popup__header">
+                    <button class="popup__close_btn" onclick="hidePopup()">
+                      ×
+                    </button>
+                    <div class="popup__header_inner">
+                      <span>ЗАКАЗАТЬ ЗВОНОК</span>
+                      <span class="popup__description">
+                        Закажите звонок и мы перезвоним через 15 минут
+                      </span>
+                    </div>
+                    <hr />
+                  </div>
+                  <div class="popup__form">
+                    <form action="" method="get">
+                      <input
+                        type="text"
+                        class="name-field"
+                        placeholder="Ваше имя"
+                        required
+                      />
+
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Ваш телефон"
+                        required
+                      />
+                      <input
+                        type="submit"
+                        value="Заказать сайт"
+                        class="popup__btn"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="email__section">
+        <div class="container">
+          <div class="email__head">
+            <span>
+              Есть <span class="colored">идея</span> для крутого проекта?
+            </span>
+            <span>Мы готовы её <span class="colored">реализовать</span>!</span>
+          </div>
+          <div class="email__container">
+            <div class="email__ico">
+              <img src="./public/img/mailIco.png" />
+            </div>
+            <input
+              type="email"
+              placeholder="Ваш адрес электронной почты"
+              class="email_input"
+            />
+            <button type="submit" class="submit_btn">Отправить</button>
+          </div>
+        </div>
+        <img src="./public/img/lastLine.png" style="width: 100%" />
+      </div>
+      <div class="reviews__section">
+        <div class="reviews__head">
+          <h2>Позвольте <span class="colored">отзывам</span></h2>
+          <h2>сказать всё за нас</h2>
+        </div>
+        <div class="review__card_list">
+          <div class="review__card">
+            <div class="review__card_head">
+              <div class="review__info">
+                <img
+                  src="./public/img/revieverAvatar.png"
+                  class="review__avatar"
+                />
+                <div class="review__name"><span>Тодд Говардов</span></div>
+                <div class="review__company">
+                  CEO сети супермаркетов “Слышь, купи!”
+                </div>
+              </div>
+            </div>
+            <div class="review__rate">
+              <div class="review__stars">
+                <ul class="review__list">
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                </ul>
+                <div class="review__mark">
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="review__text">
+              <span>
+                Оперативно сделали сайт, задизайнили по нашему брендбуку всё.
+                Качественно, круто, правки вносили быстро.
+              </span>
+            </div>
+          </div>
+          <div class="review__card">
+            <div class="review__card_head">
+              <div class="review__info">
+                <img
+                  src="./public/img/revieverAvatar2.png"
+                  class="review__avatar"
+                />
+                <div class="review__name"><span>Аргемия Сармонтелло</span></div>
+                <div class="review__company">Галактический альянс</div>
+              </div>
+            </div>
+            <div class="review__rate">
+              <div class="review__stars">
+                <ul class="review__list">
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                </ul>
+                <div class="review__mark">
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="review__text">
+              <span>
+                Ребята знают свое дело. Backend настроили всего за 2 часа.
+              </span>
+            </div>
+          </div>
+          <div class="review__card">
+            <div class="review__card_head">
+              <div class="review__info">
+                <img src="./public/img/???.###" class="review__avatar" />
+                <div class="review__name">
+                  <span>Твой единсвтенный зритель</span>
+                </div>
+                <div class="review__company">Агенство "Анти-одиночество"</div>
+              </div>
+            </div>
+            <div class="review__rate">
+              <div class="review__stars">
+                <ul class="review__list">
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                  <li class="review__item">
+                    <img src="./public/img/Star.png" class="starsListImg" />
+                  </li>
+                </ul>
+                <div class="review__mark">
+                  <span>10.0</span>
+                </div>
+              </div>
+            </div>
+            <div class="review__text">
+              <span> Привет. Я - твой единственный зритель </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <span class="footer__head">Давайте сотрудничать!</span>
+        <hr />
+        <div class="footer__grid">
+          <div class="footer__copyright">
+            <h3 class="footer__logo">
+              <span class="colored">Brain</span>
+              <span>Deadsers</span>
+            </h3>
+            <span>
+              とにかく誰も読まないその他の法律文書。本当になぜですか？そして、あなたは疑問に思うでしょう：どうしてアパートが訴訟を起こされる可能性があるのでしょうか？
+            </span>
+          </div>
+          <div class="footer__nav">
+            <span class="footer__nav_head">Навигация</span>
+            <ul class="footer__list">
+              <a href="./index.html" class="footer__link">
+                <li class="footer__item">Главная</li>
+              </a>
+              <a href="./workExamples.html" class="footer__link">
+                <li class="footer__item">Работы</li>
+              </a>
+              <a href="./prices.html" class="footer__link">
+                <li class="footer__item">Услуги</li>
+              </a>
+              <a href="./vacancies.html" class="footer__link">
+                <li class="footer__item">Вакансии</li>
+              </a>
+            </ul>
+          </div>
+          <div class="contacts">
+            <span class="footer__nav_head">Контакты</span>
+            <ul class="footer__list">
+              <li class="footer__item">+7 (999) 999-99-99</li>
+              <li class="footer__item">kakayato@pochta.ru</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

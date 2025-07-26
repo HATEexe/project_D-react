@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainDeadsers Hub</title>
+    <link rel="stylesheet" href="./css/vacancies.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__nav">
+          <ul class="header__list">
+            <a href="./index.html" class="headear__link">
+              <li class="headerNavItem">Главная</li>
+            </a>
+            <a href="./workExamples.html" class="headear__link">
+              <li class="headerNavItem">Работы</li>
+            </a>
+            <span class="header__logo">
+              <span class="colored">Brain</span>
+              <span>Deadsers</span>
+            </span>
+            <a href="./prices.html" class="headear__link">
+              <li class="headerNavItem">Услуги</li>
+            </a>
+            <a href="./vacancies.html" class="headear__link-active">
+              <li class="headerNavItem">Вакансии</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main__head">
+          <span>Наши работы</span>
+        </div>
+        <div class="main__head_text">
+          <span>
+            <span>Мы - <span class="colored">Brain</span>Deadsers,</span>
+          </span>
+          <span> а это наше совместное будущее</span>
+        </div>
+        <div class="order__section">
+          <div class="order__bg">
+            <img class="order__img" src="./public/img/brainForHIre.png" />
+            <img class="order__ellipse" src="./public/img/Ellipse 1.png" />
+          </div>
+        </div>
+        <button class="order__btn" onclick="showPopup()">ЗАКАЗАТЬ САЙТ</button>
+        <div id="popup" style="display: none">
+          <div class="popup__header">
+            <button class="popup__close_btn" onclick="hidePopup()">×</button>
+            <div class="popup__header_inner">
+              <span>ЗАКАЗАТЬ ЗВОНОК</span>
+              <span class="popup__description">
+                Закажите звонок и мы перезвоним через 15 минут
+              </span>
+            </div>
+            <hr />
+          </div>
+          <div class="popup__form">
+            <form action="" method="get">
+              <input
+                type="text"
+                class="name-field"
+                placeholder="Ваше имя"
+                required
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Ваш телефон"
+                required
+              />
+              <input type="submit" value="Заказать сайт" class="popup__btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="service__section">
+        <div class="container">
+          <div class="service__list_head">
+            <span><span class="colored">Вакансии </span>в нашей студии</span>
+          </div>
+          <div class="service__list">
+            <div class="service__card-1">
+              <div class="service__card_head">
+                <span>UI/UX дизайнер</span>
+              </div>
+              <hr />
+              <div class="service__card_body">
+                <div class="service__prise">
+                  <span class="colored">З/П от 80,000 руб</span>
+                </div>
+                <div class="service__list_container">
+                  <ul class="card__list">
+                    <li class="service__item">
+                      <span>Наличие портфолио</span>
+                    </li>
+                    <li class="service__item">
+                      <span>
+                        Уверенное владение Figma, Photoshop, Illustrator
+                      </span>
+                    </li>
+                    <li class="service__item">
+                      <span>Продвинутые знания композиции и колористики</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="service__card-2">
+              <div class="service__card_head">
+                <span>Frontend-разработчик</span>
+              </div>
+              <hr />
+              <div class="service__card_body">
+                <div class="service__prise">
+                  <span class="colored">З/П от 100,000 руб</span>
+                </div>
+                <div class="service__list_container">
+                  <ul class="card__list">
+                    <li class="service__item">
+                      <span>Хорошее знание JavaScript (ES6)</span>
+                    </li>
+                    <li class="service__item">
+                      <span>
+                        Знание HTML5 и CSS3 (SASS, LESS), кросс-браузерная
+                        верстка
+                      </span>
+                    </li>
+                    <li class="service__item">
+                      <span>Уверенное владение Vue.js</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="service__card-3">
+              <div class="service__card_head">
+                <span>Backend-разработчик</span>
+              </div>
+              <hr />
+              <div class="service__card_body">
+                <div class="service__prise">
+                  <span class="colored">З/П от 150,000 руб</span>
+                </div>
+                <div class="service__list_container">
+                  <ul class="card__list">
+                    <li class="service__item">
+                      <span
+                        >Уверенное знание PHP 5.х, 7.х, концепций ООП, MVC
+                      </span>
+                    </li>
+                    <li class="service__item">
+                      <span>
+                        Опыт разработки проектов на PHP-фреймворках, готовность
+                        работать с Yii2
+                      </span>
+                    </li>
+                    <li class="service__item">
+                      <span> Знание MySQL, уверенная работа с Git</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="order__btn3">Получить консультацию</button>
+        </div>
+      </div>
+      <div class="email__section">
+        <div class="container">
+          <div class="email__head">
+            <span>Понравились работы в нашем</span>
+            <span
+              >портфолио? Мы готовы
+              <span class="colored">сделать лучше</span>!</span
+            >
+          </div>
+          <div class="email__container">
+            <div class="email__ico">
+              <img src="./public/img/mailIco.png" />
+            </div>
+            <input
+              type="email"
+              placeholder="Ваш адрес электронной почты"
+              class="email_input"
+            />
+            <button type="submit" class="submit_btn">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <span class="footer__head">Давайте сотрудничать!</span>
+        <hr />
+        <div class="footer__grid">
+          <div class="footer__copyright">
+            <h3 class="footer__logo">
+              <span class="colored">Brain</span>
+              <span>Deadsers</span>
+            </h3>
+            <span>
+              とにかく誰も読まないその他の法律文書。本当になぜですか？そして、あなたは疑問に思うでしょう：どうしてアパートが訴訟を起こされる可能性があるのでしょうか？
+            </span>
+          </div>
+          <div class="footer__nav">
+            <span class="footer__nav_head">Навигация</span>
+            <ul class="footer__list">
+              <a href="./index.html" class="footer__link">
+                <li class="footer__item">Главная</li>
+              </a>
+              <a href="./workExamples.html" class="footer__link">
+                <li class="footer__item">Работы</li>
+              </a>
+              <a href="./prices.html" class="footer__link">
+                <li class="footer__item">Услуги</li>
+              </a>
+              <a href="./vacancies.html" class="footer__link">
+                <li class="footer__item">Вакансии</li>
+              </a>
+            </ul>
+          </div>
+          <div class="contacts">
+            <span class="footer__nav_head">Контакты</span>
+            <ul class="footer__list">
+              <li class="footer__item">+7 (999) 999-99-99</li>
+              <li class="footer__item">kakayato@pochta.ru</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
